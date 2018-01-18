@@ -103,7 +103,7 @@ public class MainActivity extends AppCompatActivity
         //NOTE: Fragment changing code
         if (fragment != null) {
             FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-            ft.setCustomAnimations(R.anim.exit_from_right, R.anim.exit_to_right);
+            ft.setCustomAnimations(R.anim.exit_from_right, FragmentTransaction.TRANSIT_NONE);
             ft.addToBackStack(null);
             ft.replace(R.id.mainFrame, fragment);
             ft.commit();

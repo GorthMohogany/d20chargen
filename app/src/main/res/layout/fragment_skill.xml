@@ -129,7 +129,7 @@
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
                             android:padding="2dp"
-                            android:text="+2"
+                            android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
@@ -156,7 +156,7 @@
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
                             android:padding="2dp"
-                            android:text="Str"
+                            android:text="Dex"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
@@ -186,7 +186,7 @@
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
                             android:padding="2dp"
-                            android:text="+3"
+                            android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
@@ -243,7 +243,7 @@
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
                             android:padding="2dp"
-                            android:text="+5"
+                            android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
@@ -300,7 +300,7 @@
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
                             android:padding="2dp"
-                            android:text="+1"
+                            android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
@@ -412,7 +412,7 @@
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
                             android:padding="2dp"
-                            android:text="+3"
+                            android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
@@ -468,7 +468,7 @@
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
                             android:padding="2dp"
-                            android:text="+3"
+                            android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
@@ -494,12 +494,628 @@
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
                             android:padding="2dp"
-                            android:text="Int"
+                            android:text="Wis"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
                         <TextView
                             android:id="@+id/textViewChaSaveProf2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <!--Intimidation-->
+
+                        <TextView
+                            android:id="@+id/skillBonusIntimidation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="+0"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skilltextIntimidation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:padding="2dp"
+                            android:text="Intimidation"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillAbIntimidation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="Cha"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillProfIntimidation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <!--Investigation-->
+
+                        <TextView
+                            android:id="@+id/skillBonusInvestigation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="+0"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skilltextInvestigation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:padding="2dp"
+                            android:text="Investigation"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillAbInvestigation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="Int"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillProfInvestigation"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <!--Medicine-->
+
+                        <TextView
+                            android:id="@+id/skillBonusMedicine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="+0"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skilltextMedicine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:padding="2dp"
+                            android:text="Medicine"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillAbMedicine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="Wis"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillProfMedicine"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <!--Nature-->
+
+                        <TextView
+                            android:id="@+id/skillBonusNature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="+0"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skilltextNature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:padding="2dp"
+                            android:text="Nature"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillAbNature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="Int"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillProfNature"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <!--Perception-->
+
+                        <TextView
+                            android:id="@+id/skillBonusPerception"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="+0"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skilltextPerception"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:padding="2dp"
+                            android:text="Perception"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillAbPerception"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="Wis"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillProfPerception"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <!--Performance-->
+
+                        <TextView
+                            android:id="@+id/skillBonusPerformance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="+0"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skilltextPerformance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:padding="2dp"
+                            android:text="Performance"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillAbPerformance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="Wis"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillProfPerformance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <!--Persuasion-->
+
+                        <TextView
+                            android:id="@+id/skillBonusPersuasion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="+0"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skilltextPersuasion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:padding="2dp"
+                            android:text="Persuasion"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillAbPersuasion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="Cha"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillProfPersuasion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <!--Religion-->
+
+                        <TextView
+                            android:id="@+id/skillBonusReligion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="+0"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skilltextReligion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:padding="2dp"
+                            android:text="Religion"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillAbReligion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="Int"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillProfReligion"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <!--SlightofHand-->
+
+                        <TextView
+                            android:id="@+id/skillBonusSlightofHand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="+0"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skilltextSlightofHand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:padding="2dp"
+                            android:text="Slight of Hand"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillAbSlightofHand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="Dex"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillProfSlightofHand"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <!--Stealth-->
+
+                        <TextView
+                            android:id="@+id/skillBonusStealth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="+0"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skilltextStealth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:padding="2dp"
+                            android:text="Stealth"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillAbStealth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="Dex"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillProfStealth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text=""
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <!--Survival-->
+
+                        <TextView
+                            android:id="@+id/skillBonusSurvival"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="+0"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skilltextSurvival"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:padding="2dp"
+                            android:text="Survival"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillAbSurvival"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="Wis"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/skillProfSurvival"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_columnWeight="1"
