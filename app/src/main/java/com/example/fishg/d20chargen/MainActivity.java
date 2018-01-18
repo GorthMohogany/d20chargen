@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity
 
         //NOTE:  Open mainFragment initially.
         FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
-        ft.setCustomAnimations(R.anim.exit_from_right, R.anim.exit_to_right);
+        ft.setCustomAnimations(R.anim.exit_from_right, FragmentTransaction.TRANSIT_NONE);
         ft.addToBackStack(null);
         ft.replace(R.id.mainFrame, new MainFragment());
         ft.commit();
@@ -120,6 +120,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onFragmentInteraction(String title) {
+
         getSupportActionBar().setTitle(title);
     }
 }
