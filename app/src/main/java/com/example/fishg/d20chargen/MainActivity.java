@@ -1,10 +1,9 @@
 package com.example.fishg.d20chargen;
 
 import android.os.Bundle;
-import android.support.design.widget.FloatingActionButton;
-import android.support.design.widget.Snackbar;
-import android.view.View;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -14,7 +13,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener {
+        implements
+            MainFragment.OnFragmentInteractionListener,
+            SkillFragment.OnFragmentInteractionListener,
+
+            NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,16 @@ public class MainActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        //NOTE:  Checks first item in the navigation drawer initially
+        navigationView.setCheckedItem(R.id.nav_frag_main);
+
+        //NOTE:  Open mainFragment initially.
+        FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+        ft.setCustomAnimations(R.anim.exit_from_right, R.anim.exit_to_right);
+        ft.addToBackStack(null);
+        ft.replace(R.id.mainFrame, new MainFragment());
+        ft.commit();
     }
 
     @Override
@@ -70,10 +83,13 @@ public class MainActivity extends AppCompatActivity
         // Handle navigation view item clicks here.
         int id = item.getItemId();
 
-        if (id == R.id.nav_camera) {
-            // Handle the camera action
-        } else if (id == R.id.nav_gallery) {
+        //NOTE: creating fragment object
+        Fragment fragment = null;
 
+        if (id == R.id.nav_frag_main) {
+            fragment = new MainFragment();
+        } else if (id == R.id.nav_frag_skill) {
+            fragment = new SkillFragment();
         } else if (id == R.id.nav_slideshow) {
 
         } else if (id == R.id.nav_manage) {
@@ -84,8 +100,26 @@ public class MainActivity extends AppCompatActivity
 
         }
 
+        //NOTE: Fragment changing code
+        if (fragment != null) {
+            FragmentTransaction ft = getSupportFragmentManager().beginTransaction();
+            ft.setCustomAnimations(R.anim.exit_from_right, R.anim.exit_to_right);
+            ft.addToBackStack(null);
+            ft.replace(R.id.mainFrame, fragment);
+            ft.commit();
+        }
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
+    }
+
+    private void navigateToPage() {
+
+    }
+
+    @Override
+    public void onFragmentInteraction(String title) {
+        getSupportActionBar().setTitle(title);
     }
 }
