@@ -213,46 +213,49 @@
                     </LinearLayout>
 
                     <GridLayout
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_gravity="center">
+                        android:layout_marginTop="2dp"
+                        android:columnCount="4">
 
                         <Button
-                            android:id="@+id/button4"
+                            android:id="@+id/button8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:layout_gravity="fill_vertical|fill_horizontal"
+                            android:gravity="center"
                             android:text="Heal"
-                            android:textAlignment="center"
-                            android:textSize="10sp" />
+                            android:textSize="12sp" />
 
                         <Button
-                            android:id="@+id/button3"
+                            android:id="@+id/button7"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:layout_gravity="fill_vertical|fill_horizontal"
+                            android:gravity="center"
                             android:text="Take \n Damage"
-                            android:textAlignment="center"
-                            android:textSize="10sp" />
+                            android:textSize="12sp" />
 
                         <Button
-                            android:id="@+id/button2"
+                            android:id="@+id/button6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:layout_gravity="fill_vertical|fill_horizontal"
+                            android:layout_weight="1"
+                            android:gravity="center"
                             android:text="Heal \n Temp HP"
-                            android:textAlignment="center"
-                            android:textSize="10sp" />
+                            android:textSize="12sp" />
 
                         <Button
-                            android:id="@+id/button"
+                            android:id="@+id/button5"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="center"
+                            android:layout_gravity="fill_vertical|fill_horizontal"
+                            android:gravity="center"
                             android:text="Rest"
-                            android:textAlignment="center"
-                            android:textSize="10sp" />
+                            android:textSize="12sp" />
                     </GridLayout>
+
 
                 </LinearLayout>
 
@@ -289,6 +292,195 @@
                         android:adjustViewBounds="false"
                         android:cropToPadding="false"
                         app:srcCompat="@color/colorPrimary" />
+
+                    <GridLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="2dp"
+                        android:columnCount="3"
+                        android:paddingBottom="8dp"
+                        android:paddingLeft="4dp"
+                        android:paddingRight="4dp"
+                        android:rowCount="4"
+                        android:rowOrderPreserved="true">
+
+                        <TextView
+                            android:id="@+id/titleArmorClass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_vertical|fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/aclonica"
+                            android:gravity="bottom"
+                            android:padding="2dp"
+                            android:text="Armor Class"
+                            android:textAlignment="center"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/titleInitiative"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_vertical|fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/aclonica"
+                            android:gravity="bottom"
+                            android:padding="2dp"
+                            android:text="Initiative"
+                            android:textAlignment="center"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/titleSpeed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/aclonica"
+                            android:padding="2dp"
+                            android:text="Speed"
+                            android:textAlignment="center"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/valueArmorClass"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_vertical|fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="16"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/valueInitiative"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_vertical|fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="+2"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/valueSpeed"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_vertical|fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="30 ft."
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/titleProficiency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_vertical|fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/aclonica"
+                            android:gravity="bottom"
+                            android:padding="2dp"
+                            android:text="Proficiency"
+                            android:textAlignment="center"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/titlePassivePerception"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_vertical|fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/aclonica"
+                            android:gravity="bottom"
+                            android:padding="2dp"
+                            android:text="Passive \n Perception"
+                            android:textAlignment="center"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/titleInspiration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_vertical|fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/aclonica"
+                            android:gravity="bottom"
+                            android:padding="2dp"
+                            android:text="Inspiration"
+                            android:textAlignment="center"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/valueProficiency"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_vertical|fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="+2"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/valuePassivePerception"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_vertical|fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="15"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+                        <TextView
+                            android:id="@+id/valueInspiration"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_vertical|fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:gravity="center"
+                            android:padding="2dp"
+                            android:text="0"
+                            android:textAlignment="center"
+                            android:textSize="18sp" />
+
+
+                    </GridLayout>
 
                 </LinearLayout>
 
