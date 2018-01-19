@@ -93,7 +93,7 @@
                             android:id="@+id/titleClass"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="3"
+                            android:layout_columnWeight="2"
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:layout_weight="3"
@@ -114,19 +114,19 @@
                             android:padding="2dp"
                             android:text="Goblin"
                             android:textAlignment="center"
-                            android:textSize="18sp" />
+                            android:textSize="14sp" />
 
                         <TextView
                             android:id="@+id/textViewClass"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="3"
+                            android:layout_columnWeight="2"
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:padding="2dp"
                             android:text="Druid 3"
-                            android:textSize="18sp" />
+                            android:textSize="14sp" />
 
 
                     </GridLayout>
@@ -151,7 +151,7 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/cardTitleCombatHealth"
+                        android:id="@+id/cardTitleHealth"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:fontFamily="@font/aclonica"
@@ -159,103 +159,64 @@
                         android:textSize="18sp" />
 
                     <ImageView
-                        android:id="@+id/cardDividerHealth"
+                        android:id="@+id/cardDividerCombat"
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:layout_marginBottom="6dp"
                         android:adjustViewBounds="false"
-                        android:cropToPadding="true"
+                        android:cropToPadding="false"
                         app:srcCompat="@color/colorPrimary" />
-
-                    <TextView
-                        android:id="@+id/textView3"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:fontFamily="@font/aclonica"
-                        android:text="Hit Points"
-                        android:textAlignment="center"
-                        android:textSize="12sp" />
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="match_parent"
-                        android:layout_gravity="center"
-                        android:baselineAligned="false"
-                        android:gravity="center"
-                        android:orientation="horizontal">
-
-                        <TextView
-                            android:id="@+id/textView4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/aclonica"
-                            android:text="29"
-                            android:textSize="30sp" />
-
-                        <TextView
-                            android:id="@+id/textView6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginLeft="2dp"
-                            android:layout_marginRight="2dp"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/aclonica"
-                            android:text="/" />
-
-                        <TextView
-                            android:id="@+id/textView5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="1"
-                            android:fontFamily="@font/aclonica"
-                            android:text="29" />
-                    </LinearLayout>
 
                     <GridLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="2dp"
-                        android:columnCount="4">
+                        android:columnCount="3"
+                        android:rowOrderPreserved="true">
 
                         <Button
-                            android:id="@+id/button8"
+                            android:id="@+id/button11"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_gravity="fill_vertical|fill_horizontal"
-                            android:gravity="center"
-                            android:text="Heal"
-                            android:textSize="12sp" />
-
-                        <Button
-                            android:id="@+id/button7"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
                             android:layout_gravity="fill_vertical|fill_horizontal"
                             android:gravity="center"
                             android:text="Take \n Damage"
                             android:textSize="12sp" />
 
                         <Button
-                            android:id="@+id/button6"
+                            android:id="@+id/button12"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
                             android:layout_gravity="fill_vertical|fill_horizontal"
-                            android:layout_weight="1"
                             android:gravity="center"
-                            android:text="Heal \n Temp HP"
+                            android:text="Heal"
                             android:textSize="12sp" />
 
                         <Button
-                            android:id="@+id/button5"
+                            android:id="@+id/button13"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
                             android:layout_gravity="fill_vertical|fill_horizontal"
                             android:gravity="center"
                             android:text="Rest"
                             android:textSize="12sp" />
-                    </GridLayout>
 
+                        <Button
+                            android:id="@+id/button9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnSpan="3"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_vertical|fill_horizontal"
+                            android:gravity="center"
+                            android:text="Status: Normal"
+                            android:textSize="12sp" />
+
+
+                    </GridLayout>
 
                 </LinearLayout>
 
@@ -543,20 +504,6 @@
                             android:textSize="12sp" />
 
                         <TextView
-                            android:id="@+id/textView41"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="3"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:layout_weight="3"
-                            android:fontFamily="@font/aclonica"
-                            android:gravity="center_vertical"
-                            android:padding="2dp"
-                            android:text="Ability"
-                            android:textSize="12sp" />
-
-                        <TextView
                             android:id="@+id/textView40"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -570,6 +517,20 @@
                             android:padding="2dp"
                             android:text="Mod"
                             android:textAlignment="center"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/textView41"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/aclonica"
+                            android:gravity="center_vertical"
+                            android:padding="2dp"
+                            android:text="Ability"
                             android:textSize="12sp" />
 
                         <TextView
@@ -615,18 +576,6 @@
                             android:textSize="16sp" />
 
                         <TextView
-                            android:id="@+id/textViewStrName"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="3"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
-                            android:text="Strength"
-                            android:textSize="16sp" />
-
-                        <TextView
                             android:id="@+id/textViewStrMod"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -638,6 +587,18 @@
                             android:padding="2dp"
                             android:text="-1"
                             android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textViewStrName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:padding="2dp"
+                            android:text="Strength"
                             android:textSize="16sp" />
 
                         <TextView
@@ -683,18 +644,6 @@
                             android:textSize="16sp" />
 
                         <TextView
-                            android:id="@+id/textViewDexName"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="3"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
-                            android:text="Dexterity"
-                            android:textSize="16sp" />
-
-                        <TextView
                             android:id="@+id/textViewDexMod"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -706,6 +655,18 @@
                             android:padding="2dp"
                             android:text="+2"
                             android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textViewDexName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:padding="2dp"
+                            android:text="Dexterity"
                             android:textSize="16sp" />
 
                         <TextView
@@ -751,18 +712,6 @@
                             android:textSize="16sp" />
 
                         <TextView
-                            android:id="@+id/textViewConName"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="3"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
-                            android:text="Constitution"
-                            android:textSize="16sp" />
-
-                        <TextView
                             android:id="@+id/textViewConMod"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -774,6 +723,18 @@
                             android:padding="2dp"
                             android:text="+3"
                             android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textViewConName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:padding="2dp"
+                            android:text="Constitution"
                             android:textSize="16sp" />
 
                         <TextView
@@ -819,18 +780,6 @@
                             android:textSize="16sp" />
 
                         <TextView
-                            android:id="@+id/textViewIntName"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="3"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
-                            android:text="Intelligence"
-                            android:textSize="16sp" />
-
-                        <TextView
                             android:id="@+id/textViewIntMod"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -842,6 +791,18 @@
                             android:padding="2dp"
                             android:text="+3"
                             android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textViewIntName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:padding="2dp"
+                            android:text="Intelligence"
                             android:textSize="16sp" />
 
                         <TextView
@@ -887,18 +848,6 @@
                             android:textSize="16sp" />
 
                         <TextView
-                            android:id="@+id/textViewWisName"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="3"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
-                            android:text="Wisdom"
-                            android:textSize="16sp" />
-
-                        <TextView
                             android:id="@+id/textViewWisMod"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -910,6 +859,18 @@
                             android:padding="2dp"
                             android:text="+3"
                             android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:id="@+id/textViewWisName"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="3"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:padding="2dp"
+                            android:text="Wisdom"
                             android:textSize="16sp" />
 
                         <TextView
@@ -955,6 +916,20 @@
                             android:textSize="16sp" />
 
                         <TextView
+                            android:id="@+id/textViewChaMod"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_columnWeight="1"
+                            android:layout_gravity="fill_horizontal"
+                            android:layout_margin="2dp"
+                            android:background="?attr/colorButtonNormal"
+                            android:fontFamily="sans-serif"
+                            android:padding="2dp"
+                            android:text="+0"
+                            android:textAlignment="center"
+                            android:textSize="16sp" />
+
+                        <TextView
                             android:id="@+id/textViewChaName"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -967,20 +942,6 @@
                             android:textSize="16sp" />
 
                         <TextView
-                            android:id="@+id/textViewChaMod"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text="0"
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <TextView
                             android:id="@+id/textViewChaSave"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -990,7 +951,7 @@
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
                             android:padding="2dp"
-                            android:text="0"
+                            android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
