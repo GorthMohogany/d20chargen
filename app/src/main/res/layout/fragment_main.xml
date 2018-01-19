@@ -159,7 +159,7 @@
                         android:textSize="18sp" />
 
                     <ImageView
-                        android:id="@+id/cardDividerCombat"
+                        android:id="@+id/cardDividerHealth"
                         android:layout_width="match_parent"
                         android:layout_height="2dp"
                         android:layout_marginBottom="6dp"
@@ -167,10 +167,58 @@
                         android:cropToPadding="false"
                         app:srcCompat="@color/colorPrimary" />
 
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/aclonica"
+                        android:text="Hit Points"
+                        android:textAlignment="center"
+                        android:textSize="12sp" />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView10"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/aclonica"
+                            android:text="29"
+                            android:textAlignment="center"
+                            android:textSize="36sp" />
+
+                        <TextView
+                            android:id="@+id/textView9"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/aclonica"
+                            android:text="/"
+                            android:textAlignment="center"
+                            android:textSize="36sp" />
+
+                        <TextView
+                            android:id="@+id/textView8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:fontFamily="@font/aclonica"
+                            android:text="29"
+                            android:textAlignment="center"
+                            android:textSize="36sp" />
+                    </LinearLayout>
+
                     <GridLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:layout_marginTop="2dp"
                         android:columnCount="3"
                         android:rowOrderPreserved="true">
 
