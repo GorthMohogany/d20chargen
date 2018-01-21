@@ -12,6 +12,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.util.SparseIntArray;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -124,9 +125,8 @@ public class MainActivity extends AppCompatActivity
 
     private int getPageById(int id) {
         int page = 0;
-
         if (fragments.indexOfValue(id) != -1) {
-            page = fragments.get(fragments.indexOfValue(id));
+            page = fragments.indexOfValue(id);
         }
 
         return page;
