@@ -502,6 +502,7 @@
                 android:layout_marginLeft="8dp"
                 android:layout_marginRight="8dp"
                 android:layout_marginTop="4dp"
+                android:padding="3dp"
                 app:cardCornerRadius="10dp"
                 app:contentPadding="4dp">
 
@@ -596,7 +597,7 @@
                             android:textSize="12sp" />
 
                         <TextView
-                            android:id="@+id/titleSaveProf"
+                            android:id="@+id/textView2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_gravity="fill_horizontal"
@@ -618,7 +619,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="8"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -632,7 +633,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="-1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -645,7 +646,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Strength"
                             android:textSize="16sp" />
 
@@ -658,24 +659,17 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="-1"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/textViewStrSaveProf"
+                        <CheckBox
+                            android:id="@+id/checkBox6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/textViewDexScore"
@@ -686,7 +680,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="14"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -700,7 +694,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+2"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -713,7 +707,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Dexterity"
                             android:textSize="16sp" />
 
@@ -726,24 +720,17 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+2"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/textViewDexSaveProf"
+                        <CheckBox
+                            android:id="@+id/checkBox4"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/textViewConScore"
@@ -754,7 +741,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="17"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -768,7 +755,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+3"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -781,7 +768,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Constitution"
                             android:textSize="16sp" />
 
@@ -794,24 +781,17 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+3"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/textViewConSaveProf"
+                        <CheckBox
+                            android:id="@+id/checkBox7"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/textViewIntScore"
@@ -822,7 +802,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="17"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -836,7 +816,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+3"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -849,7 +829,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Intelligence"
                             android:textSize="16sp" />
 
@@ -862,24 +842,18 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+5"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/textViewIntSaveProf"
+                        <CheckBox
+                            android:id="@+id/checkBox3"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text="*"
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
+                            android:layout_gravity="center"
+                            android:checked="true"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/textViewWisScore"
@@ -890,7 +864,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="17"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -904,7 +878,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+3"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -917,7 +891,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Wisdom"
                             android:textSize="16sp" />
 
@@ -930,24 +904,18 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+5"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/textViewWisSaveProf"
+                        <CheckBox
+                            android:id="@+id/checkBox2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text="*"
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
+                            android:layout_gravity="center"
+                            android:checked="true"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/textViewChaScore"
@@ -958,7 +926,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="10"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -972,7 +940,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -985,7 +953,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Charisma"
                             android:textSize="16sp" />
 
@@ -998,24 +966,17 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/textViewChaSaveProf"
+                        <CheckBox
+                            android:id="@+id/checkBox"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
 
                     </GridLayout>

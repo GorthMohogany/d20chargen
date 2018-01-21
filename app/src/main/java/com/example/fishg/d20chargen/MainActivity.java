@@ -12,7 +12,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.util.SparseIntArray;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -26,7 +25,7 @@ public class MainActivity extends AppCompatActivity
             NavigationView.OnNavigationItemSelectedListener,
             ViewPager.OnPageChangeListener {
 
-
+    Toolbar toolbar;
     MyAdapter mAdapter;
     ViewPager mPager;
     NavigationView navigationView;
@@ -36,7 +35,7 @@ public class MainActivity extends AppCompatActivity
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar = findViewById(R.id.toolbar);
 
         populatePageFragments();
 
@@ -66,6 +65,7 @@ public class MainActivity extends AppCompatActivity
         fragments.put(position++, R.id.nav_main);
         fragments.put(position++, R.id.nav_skill);
         fragments.put(position++, R.id.nav_equipment);
+        //fragments.put(position++, R.id.nav_spells);
     }
 
     @Override
@@ -181,6 +181,7 @@ public class MainActivity extends AppCompatActivity
                 case 0: fragment = new MainFragment(); break;
                 case 1: fragment = new SkillFragment(); break;
                 case 2: fragment = new EquipmentFragment(); break;
+                //case 3: fragment = new SpellsFragment(); break;
             }
 
             return fragment;

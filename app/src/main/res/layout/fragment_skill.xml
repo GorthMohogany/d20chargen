@@ -55,7 +55,6 @@
                         android:layout_marginTop="2dp"
                         android:columnCount="4"
                         android:paddingBottom="4dp"
-                        android:rowCount="18"
                         android:rowOrderPreserved="true">
 
                         <TextView
@@ -128,7 +127,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -142,7 +141,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Acrobatics"
                             android:textSize="16sp" />
 
@@ -155,26 +154,19 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Dex"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/textViewStrSaveProf"
+                        <!--Animal Handling-->
+
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling29"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--Animal Handling-->
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/textViewDexScore"
@@ -185,7 +177,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -199,7 +191,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Animal Handling"
                             android:textSize="16sp" />
 
@@ -212,26 +204,19 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Wis"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/textViewDexSaveProf"
+                        <!--Arcana-->
+
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--Arcana-->
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/textViewConScore"
@@ -242,7 +227,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -256,7 +241,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Arcana"
                             android:textSize="16sp" />
 
@@ -269,26 +254,19 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Int"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/textViewConSaveProf"
+                        <!--Athletics-->
+
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling28"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--Athletics-->
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/textViewIntScore"
@@ -299,7 +277,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -312,7 +290,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Athletics"
                             android:textSize="16sp" />
 
@@ -325,26 +303,20 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Str"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/textViewIntSaveProf"
+                        <!--Deception-->
+
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling27"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text="*"
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--Deception-->
+                            android:layout_gravity="center"
+                            android:checked="true"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/textViewWisScore"
@@ -355,7 +327,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -368,7 +340,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Deception"
                             android:textSize="16sp" />
 
@@ -381,26 +353,19 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Cha"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/textViewWisSaveProf"
+                        <!--History-->
+
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling26"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text="*"
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--History-->
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/textViewChaScore"
@@ -411,7 +376,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -424,7 +389,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="History"
                             android:textSize="16sp" />
 
@@ -437,26 +402,19 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Int"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/textViewChaSaveProf"
+                        <!--Insight-->
+
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling25"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--Insight-->
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/skillBonusInsight"
@@ -467,7 +425,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -480,7 +438,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Insight"
                             android:textSize="16sp" />
 
@@ -493,26 +451,19 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Wis"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/textViewChaSaveProf2"
+                        <!--Intimidation-->
+
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling24"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--Intimidation-->
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/skillBonusIntimidation"
@@ -523,7 +474,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -536,7 +487,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Intimidation"
                             android:textSize="16sp" />
 
@@ -549,26 +500,19 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Cha"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/skillProfIntimidation"
+                        <!--Investigation-->
+
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling18"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--Investigation-->
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/skillBonusInvestigation"
@@ -579,7 +523,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -592,7 +536,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Investigation"
                             android:textSize="16sp" />
 
@@ -605,26 +549,19 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Int"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/skillProfInvestigation"
+                        <!--Medicine-->
+
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling19"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--Medicine-->
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/skillBonusMedicine"
@@ -635,7 +572,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -648,7 +585,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Medicine"
                             android:textSize="16sp" />
 
@@ -661,26 +598,19 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Wis"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/skillProfMedicine"
+                        <!--Nature-->
+
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling22"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--Nature-->
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/skillBonusNature"
@@ -691,7 +621,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -704,7 +634,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Nature"
                             android:textSize="16sp" />
 
@@ -717,26 +647,20 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Int"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/skillProfNature"
+                        <!--Perception-->
+
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling23"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--Perception-->
+                            android:layout_gravity="center"
+                            android:checked="true"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/skillBonusPerception"
@@ -747,7 +671,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -760,7 +684,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Perception"
                             android:textSize="16sp" />
 
@@ -773,26 +697,20 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Wis"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/skillProfPerception"
+                        <!--Performance-->
+
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling21"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--Performance-->
+                            android:layout_gravity="center"
+                            android:checked="true"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/skillBonusPerformance"
@@ -803,7 +721,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -816,7 +734,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Performance"
                             android:textSize="16sp" />
 
@@ -829,26 +747,19 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Wis"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/skillProfPerformance"
+                        <!--Persuasion-->
+
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling20"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--Persuasion-->
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/skillBonusPersuasion"
@@ -859,7 +770,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -872,7 +783,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Persuasion"
                             android:textSize="16sp" />
 
@@ -885,26 +796,19 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Cha"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/skillProfPersuasion"
+                        <!--Religion-->
+
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling7"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--Religion-->
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/skillBonusReligion"
@@ -915,7 +819,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -928,7 +832,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Religion"
                             android:textSize="16sp" />
 
@@ -941,26 +845,19 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Int"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/skillProfReligion"
+                        <!--SlightofHand-->
+
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling8"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--SlightofHand-->
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/skillBonusSlightofHand"
@@ -971,7 +868,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -984,7 +881,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Slight of Hand"
                             android:textSize="16sp" />
 
@@ -997,26 +894,19 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Dex"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/skillProfSlightofHand"
+                        <!--Stealth-->
+
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling9"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--Stealth-->
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/skillBonusStealth"
@@ -1027,7 +917,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -1040,7 +930,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Stealth"
                             android:textSize="16sp" />
 
@@ -1053,26 +943,19 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Dex"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/skillProfStealth"
+                        <!--Survival-->
+
+                        <CheckBox
+                            android:id="@+id/profAcrobatics"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
-
-                        <!--Survival-->
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                         <TextView
                             android:id="@+id/skillBonusSurvival"
@@ -1083,7 +966,7 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="+0"
                             android:textAlignment="center"
                             android:textSize="16sp" />
@@ -1096,7 +979,7 @@
                             android:layout_gravity="fill_horizontal"
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Survival"
                             android:textSize="16sp" />
 
@@ -1109,24 +992,17 @@
                             android:layout_margin="2dp"
                             android:background="?attr/colorButtonNormal"
                             android:fontFamily="sans-serif"
-                            android:padding="2dp"
+                            android:padding="3dp"
                             android:text="Wis"
                             android:textAlignment="center"
                             android:textSize="16sp" />
 
-                        <TextView
-                            android:id="@+id/skillProfSurvival"
+                        <CheckBox
+                            android:id="@+id/profAnimalHandling6"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_columnWeight="1"
-                            android:layout_gravity="fill_horizontal"
-                            android:layout_margin="2dp"
-                            android:background="?attr/colorButtonNormal"
-                            android:fontFamily="sans-serif"
-                            android:padding="2dp"
-                            android:text=""
-                            android:textAlignment="center"
-                            android:textSize="16sp" />
+                            android:layout_gravity="center"
+                            android:enabled="false" />
 
                     </GridLayout>
                 </LinearLayout>
