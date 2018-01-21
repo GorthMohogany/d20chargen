@@ -1,33 +1,27 @@
 package com.example.fishg.d20chargen;
 
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
-import android.support.design.widget.TabLayout;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
-import android.support.v4.app.FragmentTransaction;
-import android.support.v4.app.ListFragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.view.ViewPager;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
-import android.view.LayoutInflater;
+import android.util.SparseIntArray;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.ArrayAdapter;
-import android.widget.ListView;
-import android.widget.TextView;
+
 
 public class MainActivity extends AppCompatActivity
         implements
             MainFragment.OnFragmentInteractionListener,
             SkillFragment.OnFragmentInteractionListener,
+            EquipmentFragment.OnFragmentInteractionListener,
             NavigationView.OnNavigationItemSelectedListener,
             ViewPager.OnPageChangeListener {
 
@@ -35,44 +29,54 @@ public class MainActivity extends AppCompatActivity
     MyAdapter mAdapter;
     ViewPager mPager;
     NavigationView navigationView;
+    SparseIntArray fragments;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+
+        populatePageFragments();
 
         mAdapter = new MyAdapter(getSupportFragmentManager());
 
-        mPager = (ViewPager) findViewById(R.id.pager);
+        mPager = findViewById(R.id.pager);
         mPager.setAdapter(mAdapter);
         mPager.addOnPageChangeListener(this);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         drawer.addDrawerListener(toggle);
         toggle.syncState();
 
-        navigationView = (NavigationView) findViewById(R.id.nav_view);
+        navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        //NOTE:  Checks first item in the navigation drawer initially
-        navigationView.setCheckedItem(R.id.nav_frag_main);
+        // Checks first item in the navigation drawer initially
+        navigationView.setCheckedItem(R.id.nav_main);
+    }
+
+    private void populatePageFragments() {
+        fragments = new SparseIntArray();
+        int position = 0;
+
+        fragments.put(position++, R.id.nav_main);
+        fragments.put(position++, R.id.nav_skill);
+        fragments.put(position++, R.id.nav_equipment);
     }
 
     @Override
     public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
 
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else if (mPager.getCurrentItem() == 0) {
             super.onBackPressed();
         } else {
-
             int prevPage = mPager.getCurrentItem() - 1;
-
             mPager.setCurrentItem(prevPage);
             navigationView.setCheckedItem(getIdByPage(prevPage));
         }
@@ -100,7 +104,6 @@ public class MainActivity extends AppCompatActivity
         return super.onOptionsItemSelected(item);
     }
 
-    @SuppressWarnings("StatementWithEmptyBody")
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
@@ -108,7 +111,7 @@ public class MainActivity extends AppCompatActivity
 
         mPager.setCurrentItem(page);
 
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
         return true;
     }
@@ -122,23 +125,15 @@ public class MainActivity extends AppCompatActivity
     private int getPageById(int id) {
         int page = 0;
 
-        switch (id) {
-            case R.id.nav_frag_main: page = 0; break;
-            case R.id.nav_frag_skill: page = 1; break;
+        if (fragments.indexOfValue(id) != -1) {
+            page = fragments.get(fragments.indexOfValue(id));
         }
 
         return page;
     }
 
     private int getIdByPage(int page) {
-        int id = 0;
-
-        switch (page) {
-            case 0: id = R.id.nav_frag_main; break;
-            case 1: id = R.id.nav_frag_skill; break;
-        }
-
-        return id;
+        return fragments.get(page);
     }
 
     @Override
@@ -158,10 +153,15 @@ public class MainActivity extends AppCompatActivity
     public void onPointerCaptureChanged(boolean hasCapture) {
     }
 
+    @Override
+    public void onFragmentInteraction(Uri uri) {
+
+    }
+
 
     public static class MyAdapter extends FragmentPagerAdapter {
 
-        private static int PAGE_COUNT = 2;
+        private static int PAGE_COUNT = 3;
 
         public MyAdapter(FragmentManager fm) {
             super(fm);
@@ -180,10 +180,10 @@ public class MainActivity extends AppCompatActivity
             switch(position) {
                 case 0: fragment = new MainFragment(); break;
                 case 1: fragment = new SkillFragment(); break;
+                case 2: fragment = new EquipmentFragment(); break;
             }
 
             return fragment;
         }
-
     }
 }
