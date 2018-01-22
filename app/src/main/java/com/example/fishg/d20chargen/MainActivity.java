@@ -1,6 +1,5 @@
 package com.example.fishg.d20chargen;
 
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
@@ -12,6 +11,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.util.SparseIntArray;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,18 +25,21 @@ public class MainActivity extends AppCompatActivity
             NavigationView.OnNavigationItemSelectedListener,
             ViewPager.OnPageChangeListener {
 
+
     Toolbar toolbar;
     MyAdapter mAdapter;
     ViewPager mPager;
     NavigationView navigationView;
     SparseIntArray fragments;
+    String[] titles;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         toolbar = findViewById(R.id.toolbar);
-
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Mohrgesh of the Woad");
         populatePageFragments();
 
         mAdapter = new MyAdapter(getSupportFragmentManager());
@@ -56,6 +59,7 @@ public class MainActivity extends AppCompatActivity
 
         // Checks first item in the navigation drawer initially
         navigationView.setCheckedItem(R.id.nav_main);
+
     }
 
     private void populatePageFragments() {
@@ -66,6 +70,11 @@ public class MainActivity extends AppCompatActivity
         fragments.put(position++, R.id.nav_skill);
         fragments.put(position++, R.id.nav_equipment);
         //fragments.put(position++, R.id.nav_spells);
+
+        titles = new String[fragments.size()];
+        titles[0] = "Mohrgesh of the Woad";
+        titles[1] = "Skills";
+        titles[2] = "Equipment";
     }
 
     @Override
@@ -117,12 +126,6 @@ public class MainActivity extends AppCompatActivity
         return true;
     }
 
-    @Override
-    public void onFragmentInteraction(String title) {
-
-        getSupportActionBar().setTitle(title);
-    }
-
     private int getPageById(int id) {
         int page = 0;
         if (fragments.indexOfValue(id) != -1) {
@@ -138,6 +141,7 @@ public class MainActivity extends AppCompatActivity
 
     @Override
     public void onPageSelected(int position) {
+        getSupportActionBar().setTitle(titles[position]);
         navigationView.setCheckedItem(getIdByPage(position));
     }
 
@@ -154,10 +158,8 @@ public class MainActivity extends AppCompatActivity
     }
 
     @Override
-    public void onFragmentInteraction(Uri uri) {
-
+    public void onFragmentInteraction(String title) {
     }
-
 
     public static class MyAdapter extends FragmentPagerAdapter {
 
